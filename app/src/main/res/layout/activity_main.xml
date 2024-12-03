@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:text="Hello World!"
+    android:visibility="visible"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/number_input"
+        style="@style/Widget.Material3.TextInputEditText.OutlinedBox.Dense"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="25dp"
+        android:autofillHints="input number"
+        android:background="@color/background"
+        android:hint="enter_number"
+        android:hyphenationFrequency="none"
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:textColorHint="#757575"
+        android:textSize="21sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="VisualLintTextFieldSize,SpeakableTextPresentCheck" />
+
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="192dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="68dp"
+        app:layout_constraintBottom_toTopOf="@+id/show_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/convert"
+        app:layout_constraintTop_toBottomOf="@+id/number_input" />
+
+    <Button
+        android:id="@+id/convert"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="152dp"
+        android:background="#203354"
+        android:backgroundTint="#203354"
+        android:text="convert"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@id/number_input"
+        app:layout_constraintHorizontal_bias="0.012"
+        app:layout_constraintStart_toStartOf="@id/number_input"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/show_text"
+        android:layout_width="335dp"
+        android:layout_height=
+
+
+            "0dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="116dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="440dp"
+        android:background="#00EAD8ED"
+        android:textColor="#203354"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/number_input"
+        app:layout_constraintVertical_bias="0.52" />
+</androidx.constraintlayout.widget.ConstraintLayout>
