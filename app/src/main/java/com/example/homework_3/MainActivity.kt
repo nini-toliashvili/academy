@@ -25,6 +25,7 @@ class MainActivity : AppCompatActivity() {
 
 
         convertButton.setOnClickListener {
+            //following isEmpty check is gpt suggestion, not quite understand what it does or what toast is
             if (numToConvert.text.toString().isEmpty()) {
                 Toast.makeText(this, "Please enter some text", Toast.LENGTH_SHORT).show()
             }
