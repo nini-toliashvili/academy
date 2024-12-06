@@ -101,6 +101,28 @@ class Homework4 : AppCompatActivity(){
         true
         }
 
+        again.setOnClickListener {
+            emailAddress.setText("")
+            username.setText("")
+            firstname.setText("")
+            lastname.setText("")
+            age.setText("")
+
+            emailInfo.visibility = View.GONE
+            usernameInfo.visibility = View.GONE
+            name.visibility = View.GONE
+            ageInfo.visibility = View.GONE
+            again.visibility = View.GONE
+
+            emailAddress.visibility = View.VISIBLE
+            username.visibility = View.VISIBLE
+            firstname.visibility = View.VISIBLE
+            lastname.visibility = View.VISIBLE
+            age.visibility = View.VISIBLE
+            save.visibility = View.VISIBLE
+            clear.visibility = View.VISIBLE
+        }
+
 
     }
 }
