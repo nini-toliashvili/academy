@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/full_name"
+        style="@style/Widget.Material3.TextInputEditText.OutlinedBox.Dense"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="25dp"
+        android:autofillHints="full name"
+        android:background="@color/background"
+        android:hint="@string/enter_full_name"
+        android:hyphenationFrequency="none"
+        android:inputType="text"
+        android:textColor="@color/black"
+        android:textColorHint="#757575"
+        android:textSize="21sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/emailAddress"
+        style="@style/Widget.Material3.TextInputEditText.OutlinedBox.Dense"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="25dp"
+        android:autofillHints="email address"
+        android:background="@color/background"
+        android:hint="@string/enter_email_address"
+        android:hyphenationFrequency="none"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/black"
+        android:textColorHint="#757575"
+        android:textSize="21sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/full_name" />
+
+    <Button
+        android:id="@+id/save_user"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="#03A9F4"
+        android:text="@string/add_user"
+        android:textColor="@color/white"
+        android:textSize="21sp"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailAddress" />
+
+    <TextView
+        android:id="@+id/user_count"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="25dp"
+        android:text="@string/user_0"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailAddress" />
+
+    <EditText
+        android:id="@+id/get_user"
+        style="@style/Widget.Material3.TextInputEditText.OutlinedBox.Dense"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="408dp"
+        android:layout_marginEnd="25dp"
+        android:autofillHints="full name"
+        android:background="@color/background"
+        android:hint="@string/enter_email"
+        android:hyphenationFrequency="none"
+        android:inputType="text"
+        android:textColor="@color/black"
+        android:textColorHint="#757575"
+        android:textSize="21sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/get_user_button"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="#2175F3"
+        android:text="@string/get_user_information"
+        android:textColor="@color/white"
+        android:textSize="21sp"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/get_user" />
+
+    <TextView
+        android:id="@+id/user_info"
+        android:layout_width="wrap_content"
+        android:layout_height="140dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/user_info_placeholder"
+        android:textAlignment="textStart"
+        android:textSize="21sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/get_user_button" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
