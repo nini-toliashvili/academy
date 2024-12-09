@@ -43,7 +43,7 @@
         android:id="@+id/output"
         android:layout_width="wrap_content"
         android:layout_height="55dp"
-        android:layout_marginStart="276dp"
+        android:layout_marginStart ="276dp"
         android:layout_marginTop="32dp"
         android:backgroundTint="#03A9F4"
         android:text="@string/output"

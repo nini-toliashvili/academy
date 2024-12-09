@@ -7,7 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.homework_3.databinding.ExamLBinding
 
 
-class Exam: AppCompatActivity() {
+class Exam: AppCompatActivity()  {
     private lateinit var bindiing : ExamLBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
