@@ -1,84 +1,83 @@
-
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <EditText
-        android:id="@+id/input_anagram"
-        style="@style/Widget.Material3.TextInputEditText.OutlinedBox.Dense"
-        android:layout_width="0dp"
-        android:layout_height="55dp"
-        android:layout_marginStart="25dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="25dp"
-        android:autofillHints="anagram"
-        android:background="@color/background"
-        android:hint="@string/enter_anagram"
-        android:hyphenationFrequency="none"
-        android:inputType="text"
-        android:textColor="@color/black"
-        android:textColorHint="#757575"
-        android:textSize="21sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <EditText
+            android:id="@+id/input_anagram"
+            style="@style/Widget.Material3.TextInputEditText.OutlinedBox.Dense"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="25dp"
+            android:autofillHints="anagram"
+            android:background="@color/background"
+            android:hint="@string/enter_anagram"
+            android:hyphenationFrequency="none"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textColorHint="#757575"
+            android:textSize="21sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/save"
-        android:layout_width="wrap_content"
-        android:layout_height="55dp"
-        android:layout_marginStart="25dp"
-        android:layout_marginTop="32dp"
-        android:backgroundTint="#03A9F4"
-        android:text="@string/save"
-        android:textColor="@color/white"
-        android:textSize="21sp"
-        android:visibility="visible"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/input_anagram" />
+        <Button
+            android:id="@+id/save"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="32dp"
+            android:backgroundTint="#03A9F4"
+            android:text="@string/save"
+            android:textColor="@color/white"
+            android:textSize="21sp"
+            android:visibility="visible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/input_anagram" />
 
-    <Button
-        android:id="@+id/output"
-        android:layout_width="wrap_content"
-        android:layout_height="55dp"
-        android:layout_marginStart ="276dp"
-        android:layout_marginTop="32dp"
-        android:backgroundTint="#03A9F4"
-        android:text="@string/output"
-        android:textColor="@color/white"
-        android:textSize="21sp"
-        android:visibility="visible"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/input_anagram" />
+        <Button
+            android:id="@+id/output"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_marginStart ="276dp"
+            android:layout_marginTop="32dp"
+            android:backgroundTint="#03A9F4"
+            android:text="@string/output"
+            android:textColor="@color/white"
+            android:textSize="21sp"
+            android:visibility="visible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/input_anagram" />
 
-    <TextView
-        android:id="@+id/show_anagrams"
-        android:layout_width="wrap_content"
-        android:layout_height="140dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="40dp"
-        android:text="@string/anagram_placeholder"
-        android:textAlignment="textStart"
-        android:textSize="21sp"
-        android:visibility="invisible"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/save" />
+        <TextView
+            android:id="@+id/show_anagrams"
+            android:layout_width="wrap_content"
+            android:layout_height="140dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="40dp"
+            android:text="@string/anagram_placeholder"
+            android:textAlignment="textStart"
+            android:textSize="21sp"
+            android:visibility="invisible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/save" />
 
-    <Button
-        android:id="@+id/clear"
-        android:layout_width="wrap_content"
-        android:layout_height="55dp"
-        android:layout_marginStart="288dp"
-        android:layout_marginTop="536dp"
-        android:backgroundTint="#03A9F4"
-        android:text="clear"
-        android:textColor="@color/white"
-        android:textSize="21sp"
-        android:visibility="visible"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/input_anagram" />
+        <Button
+            android:id="@+id/clear"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_marginStart="288dp"
+            android:layout_marginTop="536dp"
+            android:backgroundTint="#03A9F4"
+            android:text="clear"
+            android:textColor="@color/white"
+            android:textSize="21sp"
+            android:visibility="visible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/input_anagram" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
