@@ -6,9 +6,10 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.transition.Visibility
 import com.example.homework_3.databinding.Homework5Binding
 
-private lateinit var binding: Homework5Binding
+
 
 class Homework5:AppCompatActivity() {
+    private lateinit var binding: Homework5Binding
     override fun onCreate(savedInstanceState: Bundle?) {
         var count:Int = 0
         super.onCreate(savedInstanceState)
